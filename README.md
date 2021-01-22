@@ -1,4 +1,5 @@
-- While using the kinect v2 sensor,I'm very surprised to find that I can't find a perfect kinect v2 urdf model. So I make this and hope this will help you.
+- This package contains URDF and gazbo, rviz support for Microsoft Kinect V2. This package also publishes static_transform for the camera location /tf wrt root. This can be modified by checking launch/gazbo.launch and urdf/kinect_v2_standalong.urdf.xacro.
+
 ## How to use
 - To use in rviz:
 ```
