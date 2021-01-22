@@ -1,4 +1,7 @@
-- This package contains URDF and gazbo, rviz support for Microsoft Kinect V2. This package also publishes static_transform for the camera location /tf wrt root. This can be modified by checking launch/gazbo.launch and urdf/kinect_v2_standalong.urdf.xacro.
+# Created by: wangxian4423
+# Modified and maintained by: Prasanth Suresh (ps32611@uga.edu)
+
+- This package contains URDF, gazbo and rviz support for Microsoft Kinect V2. This package also publishes static_transform for the camera location /tf wrt root. This can be modified by checking launch/gazbo.launch and urdf/kinect_v2_standalong.urdf.xacro.
 
 ## How to use
 - To use in rviz:
