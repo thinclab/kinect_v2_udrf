@@ -3,8 +3,8 @@
      <xacro:include filename="$(find kinect_v2)/urdf/kinect_v2.urdf.xacro" />
      <link name="root"/>
     <xacro:kinect_v2  parent="root">
-        <origin xyz="0 0.1 1.50"
-                rpy="0 0.785398 0" />
+        <origin xyz="2.2 0 1.6"	
+                rpy="0 0.349066 3.1415" /> <!-- 2.2 0 1.6 0 0.349066 3.1415 -->
     </xacro:kinect_v2>
     <gazebo>
     <static>true</static>

@@ -22,7 +22,7 @@
                     <mesh filename="package://kinect_v2/meshes/kinect2.STL" />
                 </geometry>
                 <material name="">
-                    <!--color rgba="0.01 0.01 0.01 1" /-->
+                    <color rgba="0.5 0.5 0.5 1" />
                 </material>
             </visual>
             <collision>
@@ -66,10 +66,5 @@
         <link name="kinect2_ir_optical_frame" />
         <!-- gazebo extensions -->
         <xacro:kinect2_ir_gazebo link_name="kinect2_ir_link" frame_name="kinect2_ir_optical_frame" camera_name="kinect_V2" />
-
-
-	<gazebo reference="kinect2_base_link">
-        <material>Gazebo/FlatBlack</material>
-        </gazebo>
     </xacro:macro>
 </robot>

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
  <gazebo reference="kinect2_base_link">
-  <material>Gazebo/Grey</material>
+  <material>Gazebo/FlatBlack</material>
   </gazebo>
 <xacro:macro name="kinect2_ir_gazebo" params="link_name frame_name camera_name">
   <gazebo reference="${link_name}">
@@ -12,8 +12,8 @@
         <horizontal_fov>${57.0*M_PI/180.0}</horizontal_fov>
         <image>
           <format>L8</format>
-          <width>640</width>
-          <height>480</height>
+          <width>1280</width>	<!-- 1920 -->
+          <height>800</height>	<!-- 1080 -->
         </image>
         <clip>
           <near>0.01</near>
@@ -57,8 +57,8 @@
         <horizontal_fov>${57.0*M_PI/180.0}</horizontal_fov>
         <image>
           <format>B8G8R8</format>
-          <width>640</width>
-          <height>480</height>
+          <width>1280</width>	<!-- 1920 -->
+          <height>800</height>	<!-- 1080 -->
         </image>
         <clip>
           <near>0.01</near>

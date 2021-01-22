@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<launch>
+  <node
+    name="kinect_tf"
+    pkg="tf"
+    type="static_transform_publisher"
+    args="2.2 0 1.6 0 0.349066 3.1415 root kinect2_rgb_optical_frame 40" />
+	<!-- 2.2 0 1.6 0 0.349066 3.1415 root kinect2_rgb_optical_frame 40 -->
+  <param name="kinect_robot_description" command="$(find xacro)/xacro --inorder '$(find kinect_v2)/urdf/kinect_v2_standalong.urdf.xacro'" />
+  <node name="spawn_model" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen" args="-urdf -model kinect_v2 -param kinect_robot_description"/>
+</launch>
+
