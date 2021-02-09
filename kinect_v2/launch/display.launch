@@ -23,11 +23,11 @@
 	<remap from="joint_states" to="kinect_joint_states" />     
 	<remap from="tf_prefix" to="kinect_tf_prefix" /> 
 	</node>
-  <node
+  <!--node
     name="kinectv2_rviz"
     pkg="rviz"
     type="rviz"
     args="-d $(find kinect_v2)/urdf.rviz" >
     <param name="use_gui" value="$(arg gui)" />
-  </node>
+  </node-->
 </launch>
